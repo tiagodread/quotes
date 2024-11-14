@@ -12,35 +12,35 @@
 </head>
 
 <body>
-    
+
     <!-- Navbar -->
     <div class="navbar">
         <div class="brand">1 Satoshi = 1 Real</div>
         <div class="menu">
-            <a href="#">About</a>
+            <a href="#" id="about-link">Sobre</a>
         </div>
     </div>
 
-        <div class="stats-box">
-            <h2>Cotação Atual</h2>
-            <div class="divider"></div>
+    <div class="stats-box">
+        <h2>Cotação Atual</h2>
+        <div class="divider"></div>
 
-            <div class="stat-item">
-                <span class="label">Preço do Bitcoin</span>
-                <span class="value" id="btc-price"></span>
-            </div>
-            <div class="stat-item">
-                <span class="label">BRL/Sats</span>
-                <span class="value" id="sats-brl"></span>
-            </div>
-            <div class="stat-item">
-                <span class="label">Sats/BRL</span>
-                <span class="value" id="brl-sats"></span>
-            </div>
+        <div class="stat-item">
+            <span class="label">Preço do Bitcoin</span>
+            <span class="value" id="btc-price"></span>
+        </div>
+        <div class="stat-item">
+            <span class="label">BRL/Sats</span>
+            <span class="value" id="sats-brl"></span>
+        </div>
+        <div class="stat-item">
+            <span class="label">Sats/BRL</span>
+            <span class="value" id="brl-sats"></span>
+        </div>
 
-            <div class="divider"></div>
+        <div class="divider"></div>
 
-            <!-- <h3>Mining Details</h3>
+        <!-- <h3>Mining Details</h3>
             <div class="stat-item">
                 <span class="label">Current Network Hashrate</span>
                 <span class="value">724.81 EH/s</span>
@@ -85,7 +85,34 @@
                 <span class="label">Min Fee</span>
                 <span class="value">2 sat/vB</span>
             </div> -->
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2>Sobre o Projeto</h2>
+            <p>
+                Este projeto foi desenvolvido para oferecer uma ferramenta simples e intuitiva de acompanhamento do
+                preço do Bitcoin em reais (BRL) e a conversão para satoshis, a menor unidade de um Bitcoin. Você pode
+                visualizar em tempo real a cotação atual do Bitcoin, quantos satoshis são necessários para 1 real
+                (BRL/Sats) e a conversão inversa (Sats/BRL).
+            </p>
+            <p>
+                O objetivo é fornecer informações rápidas e precisas para quem acompanha o mercado de Bitcoin,
+                facilitando o entendimento e o monitoramento do preço.
+            </p>
+            <p>
+                O código-fonte é totalmente aberto e está disponível no GitHub. Sinta-se à vontade para explorar,
+                contribuir ou fazer sugestões:
+            </p>
+            <a href="https://github.com/tiagodread/quotes" target="_blank">Acesse o Repositório no GitHub</a>
+            <!-- <p>
+                Se você achou esta ferramenta útil e gostaria de apoiar o projeto, considere fazer uma doação via
+                Lightning Network:
+            </p>
+            <a href="lightning:seu-endereco-lightning" target="_blank">Faça uma Doação via Lightning ⚡</a> -->
         </div>
+    </div>
     </div>
 
 </body>

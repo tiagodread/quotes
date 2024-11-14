@@ -59,6 +59,38 @@ async function atualizarCotacao() {
     }
 }
 
+function handleModal() {
+    document.addEventListener('DOMContentLoaded', () => {
+        const aboutLink = document.getElementById('about-link');
+        const modal = document.getElementById('modal');
+        const closeModalButton = document.getElementById('close-modal');
+
+        if (aboutLink && modal && closeModalButton) {
+            // Abrir o modal ao clicar em "About"
+            aboutLink.addEventListener('click', (event) => {
+                event.preventDefault();
+                modal.style.display = 'flex';
+            });
+
+            // Fechar o modal ao clicar no botão de fechar
+            closeModalButton.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+
+            // Fechar o modal ao clicar fora do conteúdo
+            window.addEventListener('click', (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        } else {
+            console.error('Elementos do modal não foram encontrados.');
+        }
+    });
+}
+
 setInterval(atualizarCotacao, 15000);
 
 atualizarCotacao();
+
+handleModal();
