@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    background-color: #fff;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar .brand {
+    font-size: 1.5rem;
+    color: #f90;
+    font-weight: normal;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .menu a {
+    color: #999;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar .menu a:hover {
+    color: #333;
+}
+
+/* Conteúdo da Página */
+.content {
+    padding-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#cotacao {
+    font-size: 2rem;
+    color: #f90;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.loading {
+    color: #f90;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.stats-box {
+    width: 90%;
+    max-width: 500px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #444;
+}
+
+.stats-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border-bottom: 1px solid #444;
+    margin: 10px 0;
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stat-item .label {
+    color: #FF9900;
+}
+
+.stat-item .value {
+    font-weight: bold;
+}
+
+.positive {
+    color: #00FF00;
+}
+
+.negative {
+    color: #FF0000;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress-bar-inner {
+    height: 100%;
+    background-color: #00FF00;
+    border-radius: 5px;
+}
